@@ -1,1 +1,21 @@
-Hello World
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <script crossorigin type="text/javascript">
+    fetch('https://www.basketball-bund.net/rest/club/id/766/actualmatches?justHome=false&rangeDays=8')
+      .then(res => res.json())
+      .then(json => console.log(json))
+      .catch(error => console.error(error))
+  </script>
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+<p>Hello world! This is HTML5 Boilerplate.</p>
+<div id="widget_1637009017051"></div>
+</body>
+
+</html>
